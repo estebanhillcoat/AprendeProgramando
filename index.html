@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    
+    
+    <input id="campoUno" value="" placeholder="usuario"> <!-- placeholder es el texto indicativo que sale en gris -->
+    
+    <button onclick="presionar()">ok</button> <!-- el boton tiene la funcion presionar() -->
+    
+      
+    <p id="mensaje"></p> <!-- aca se va a mostrar el mensaje -->
+    
+       
+    <script>
+    
+      function presionar() {
+        
+        
+        var user; /* declaro la variable */
+        user = document.getElementById("campoUno").value; /* tomo el VALUE del input cuyo Id es CampoUno */
+        document.getElementById("mensaje").innerHTML = user; /* muestro el contenido de la variable USER en el elemto HTML cuyo ID es mensaje */
+        
+        
+      }
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+  </body>
+</html>
